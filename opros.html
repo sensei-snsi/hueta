@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Опрос
+	</title>
+
+	<style>
+		body {
+			background-color: #616161cb;
+			font-family: Verdana;
+			text-align: center;
+		}
+
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		button {
+			background-color: #616161cb;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Опрос</h1>
+
+	<form id="form">
+
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Имя
+			</label>
+
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Почта
+			</label>
+
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Возраст
+			</label>
+
+			<input type="text"
+				id="age"
+				placeholder="Enter your age" />
+		</div>
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+				Кто ты ?
+			</label>
+			
+			<select name="role" id="role">
+				<option value="student">Ученик</option>
+				<option value="intern">Учитель</option>
+				<option value="professional">
+					Родитель
+				</option>
+				<option value="other">Другое</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label>
+				Вы бы поели супа
+			</label>
+
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Да</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">Нет</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed">Возможно</input>
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label>Выберите из списка
+			</label>
+			<!-- Input Type Checkbox -->
+			<label for="inp-1">
+				<input type="checkbox"
+					name="inp">курица</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">мясо</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">рыба</input></label>
+		</div>
+
+		<div class="form-control">
+			<label for="comment">
+				Оставить комментарий
+			</label>
+
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div>
+
+		<button type="submit" value="submit">
+			Отправить
+		</button>
+	</form>
+</body>
+
+</html>
